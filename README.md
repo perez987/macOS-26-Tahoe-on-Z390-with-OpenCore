@@ -115,7 +115,7 @@ I can use two SMBIOS: MacPro 7,1 with the iGPU disabled in BIOS and iMac 20,2 wi
 
 ### Update Notifications
 
-All supported models have T2 chip, so by default theHacks don't receive notifications of new updates from System Settings. To receive these notifications, you must add:
+All supported models have T2 chip, so by default Hacks don't receive notifications of new updates from System Settings. To receive these notifications, you must add:
 
 - RestrictEvents.kext
 - revpatch=sbvmm to boot args. revpatch=sbvmm makes macOS believe it's in a virtual machine and, in this case, SMBIOS model with a T2 chip doesn't matter.
