@@ -156,7 +156,7 @@ You can have all four properties simultaneously so that the same port map works 
 
 To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run USBMapInjectorEdit.command, drag a USBMap.kext or USBPorts.kext file and apply the change.
 
-### IntegratedAudio
+### Integrated Audio
 
 Although AppleHDA.kext was present in the first beta of macOS Tahoe, it has been removed by Apple from subsequent betas and does not appear to be reintroduced into the system. Without this extension it's impossible to manage audio from the motherboard chip and AppleALC.kext is useless, so the integrated audio source has been lost. Apple Silicon Macs manage audio via the T2 chip; they don't need AppleHDA.kext and Apple has decided not to maintain it.
 
@@ -168,7 +168,7 @@ Direct options include:
 	- Although its CPU usage is minimal, it's slightly higher than that of the integrated audio.
 - VoodooHDA.kext: Audio driver less commonly used than AppleALC.kext. Available on the CloverHackyColor GitHub site (current developer: *Sergey Slice*). *Chris1111* has a utility on his GitHub site that automates the VoodooHDA installation process on Tahoe (**VoodooHDA-Tahoe**). I haven't tried it but some users have solved audio issue with it.
 
-The most desired solution is reinstalling AppleHDA.kext. This can already be done thanks to recently emerged projects: [MyKextInstaller](https://github.com/Mirone/MyKextInstaller) by *Mirone* and [SimpleLoader](https://github.com/laobamac/SimpleLoader) by *laobamac*. Both projects are on GitHub. I've tested both and they worked well.
+The most desired solution is reinstalling AppleHDA.kext. This can already be done thanks to recently emerged projects: [MyKextInstaller](https://github.com/Mirone/MyKextInstaller) by *Mirone* and [SimpleLoader](https://github.com/laobamac/SimpleLoader) by *laobamac*. Both projects are on GitHub. I've tested both and they worked well. More info at: [AppleHDA back in Tahoe](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe).
 
 ### Intel Wi-Fi
 
