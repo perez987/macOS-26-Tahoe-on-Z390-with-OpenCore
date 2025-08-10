@@ -120,7 +120,11 @@ All supported models have T2 chip, so by default theHacks don't receive notifica
 - RestrictEvents.kext
 - revpatch=sbvmm to boot args. revpatch=sbvmm makes macOS believe it's in a virtual machine and, in this case, SMBIOS model with a T2 chip doesn't matter.
 
-![RestrictEvents](RestrictEvents-tahoe.png)
+<br>
+<p align="center">
+<img width="640" src="RestrictEvents-tahoe.png">
+</p>
+<br>
 
 Another option is to download the full installer package each time, bypassing this limitation, but these are large packages, over 17 GB in size.
 
@@ -128,15 +132,27 @@ Another option is to download the full installer package each time, bypassing th
 
 Apple has changed the name of the USB port properties in the USBMap.kext files in macOS Tahoe. Where previously there was:
 
-![USB before Tahoe](USB-pretahoe.png)
+<br>
+<p align="center">
+<img width="640" src="USB-pretahoe.png">
+</p>
+<br>
 
 it has now changed to:
 
-![USB Tahoe](USB-tahoe.png)
+<br>
+<p align="center">
+<img width="640" src="USB-tahoe.png">
+</p>
+<br>
 
 You can have all four properties simultaneously so that the same port map works in Tahoe and earlier macOS.
 
-![USB from Ventura to Tahoe](USB-all.png)
+<br>
+<p align="center">
+<img width="640" src="USB-all.png">
+</p>
+<br>
 
 To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run USBMapInjectorEdit.command, drag a USBMap.kext or USBPorts.kext file and apply the change.
 
