@@ -146,7 +146,7 @@ it has now changed to:
 </p>
 <br>
 
-You can have all four properties simultaneously so that the same port map works in Tahoe and earlier macOS.
+You can have all four properties simultaneously so that the same ports map works in Tahoe and earlier macOS.
 
 <br>
 <p align="center">
