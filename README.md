@@ -128,7 +128,7 @@ All supported models have T2 chip, so by default Hacks don't receive notificatio
 
 Another option is to download the full installer package each time, bypassing this limitation, but these are large packages, over 17 GB in size.
 
-### USB Port Map
+### USB Ports Map
 
 Apple has changed the name of the USB port properties in the USBMap.kext files in macOS Tahoe. Where previously there was:
 
