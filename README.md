@@ -176,7 +176,10 @@ The most desired solution is reinstalling AppleHDA.kext. This can already be don
 
 - AirportItlwm doesn't work on Tahoe, but itlwm does; the latest version is 2.3.0.
 - Heliport (used next to itlwm) is at version 1.5.0, although there is a 2.0.0-alpha version that works very well on Tahoe. Extended Instructions: [Wi-Fi Intel AX210 on macOS Sonoma and Sequoia](https://github.com/perez987/Intel-AX210-on-macOS-Sonoma-Sequoia)
-- Fenvi Wi-Fi: There is no fix for this issue yet. OCLP developers are working on it.
+
+### Fenvi Wi-Fi
+
+There is no fix for this issue yet. OCLP developers are working on it.
 
 ### EFI folder with OpenCore 1.0.5
 
