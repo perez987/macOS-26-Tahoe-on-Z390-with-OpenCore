@@ -156,6 +156,8 @@ You can have all four properties simultaneously so that the same ports map works
 
 To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run USBMapInjectorEdit.command, drag a USBMap.kext or USBPorts.kext file and apply the change.
 
+Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool shows in the USB tab.
+
 ### Integrated Audio
 
 Although AppleHDA.kext was present in the first beta of macOS Tahoe, it has been removed by Apple from subsequent betas and does not appear to be reintroduced into the system. Without this extension it's impossible to manage audio from the motherboard chip and AppleALC.kext is useless, so the integrated audio source has been lost. Apple Silicon Macs manage audio via the T2 chip; they don't need AppleHDA.kext and Apple has decided not to maintain it.
