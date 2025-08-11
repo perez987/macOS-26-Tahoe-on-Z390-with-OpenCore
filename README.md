@@ -130,7 +130,7 @@ Another option is to download the full installer package each time, bypassing th
 
 ### USB Ports Map
 
-Apple has changed the name of the USB port properties in the USBMap.kext files in macOS Tahoe. Where previously there was:
+Apple has changed the name of the USB port properties in USBMap.kext files in macOS Tahoe. Where previously there was:
 
 <br>
 <p align="center">
@@ -156,7 +156,7 @@ You can have all four properties simultaneously so that the same ports map works
 
 To make the change, you have the option of doing it manually or using *corpnewt's* [USBMap tool](https://github.com/corpnewt/USBMap), which has been updated to add the new properties to existing maps. Once downloaded, run USBMapInjectorEdit.command, drag a USBMap.kext or USBPorts.kext file and apply the change.
 
-Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool shows in the USB tab.
+Note: Comment property is not part of Apple ports maps but it is useful information that Hackintool can show in the USB tab.
 
 ### Integrated Audio
 
