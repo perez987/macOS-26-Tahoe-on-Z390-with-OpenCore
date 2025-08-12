@@ -162,7 +162,7 @@ Note: Comment property is not part of Apple ports maps but it is useful informat
 
 Although AppleHDA.kext was present in the first beta of macOS Tahoe, it has been removed by Apple from subsequent betas and does not appear to be reintroduced into the system. Without this extension it's impossible to manage audio from the motherboard chip and AppleALC.kext is useless, so the integrated audio source has been lost. Apple Silicon Macs manage audio via the T2 chip; they don't need AppleHDA.kext and Apple has decided not to maintain it.
 
-**Options without AppleHDA.kext**:
+<ins>Options without AppleHDA.kext</ins>:
 
 - Audio via HDMI or DisplayPort from the AMD graphics card ports.
 - USB sound devices (automatically recognized by macOS; plug and play). I've tried the Sound Blaster Play! 3 device, which costs less than €20, and I'm very satisfied with the sound quality but it has two drawbacks:
@@ -170,14 +170,9 @@ Although AppleHDA.kext was present in the first beta of macOS Tahoe, it has been
 	- Although its CPU usage is minimal, it's slightly higher than that of the integrated audio.
 - VoodooHDA.kext: Audio driver less commonly used than AppleALC.kext. Available on the CloverHackyColor GitHub site (current developer: *Sergey Slice*). *Chris1111* has a utility on his GitHub site that automates the VoodooHDA installation process on Tahoe (**VoodooHDA-Tahoe**). I haven't tried it but some users have solved audio issue with it.
 
-**AppleHDA.kext back**:
+<ins>AppleHDA.kext back</ins>:
 
 The most desired solution is reinstalling AppleHDA.kext. This can already be done thanks to recently emerged projects: MyKextInstaller by *Mirone* and SimpleLoader by *laobamac*. Both projects are on GitHub. I've tested both and they worked well. More info at: [AppleHDA back in Tahoe](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe).
-
-If you not have GitHub account, you can get these apps from my website:
-
-- MyKextInstaller
-- SimpleLoader
 
 ### Intel Wi-Fi
 
