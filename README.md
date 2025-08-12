@@ -80,12 +80,12 @@ I can use two SMBIOS: MacPro 7,1 with the iGPU disabled in BIOS and iMac 20,2 wi
 	- ResizeAppleGpuBars = -1
 - DeviceProperties
 	- Add
-		- PciRoot(0x0)/Pci(0x2,0x0)
+		- PciRoot(0x0)/Pci(0x2,0x0) (only iMac)
 			- AAPL,ig-platform-id | Data | 0300913E
 			- device-id | Data | 9B3E0000
 			- enable-metal | Data | 01000000
 			- rps-control | Data | 01000000
-		- PciRoot(0x0)/Pci(0x1.0x0)/Pci(0x0.0x0)/Pci(0x0.0x0)/Pci(0x0.0x0)
+		- PciRoot(0x0)/Pci(0x1.0x0)/Pci(0x0.0x0)/Pci(0x0.0x0)/Pci(0x0.0x0) (only iMac)
 			- unfairgva | Number | 6
 		- PciRoot(0x0)/Pci(0x1F,0x3)
 			- layout-id | Data | 07000000
@@ -101,7 +101,7 @@ I can use two SMBIOS: MacPro 7,1 with the iGPU disabled in BIOS and iMac 20,2 wi
 - NVRAM
 	- WriteFlash=True
 	- Add >> 7C436110-AB2A-4BBB-A880-FE41995C9F82:
-		- boot-args >> agdpmod=pikera (only iMac20,2)
+		- boot-args >> agdpmod=pikera (only iMac)
 		- csr-active-config >> 03080000
 		- run-efi-updater >> No
 	- Delete >> 7C436110-AB2A-4BBB-A880-FE41995C9F82:
