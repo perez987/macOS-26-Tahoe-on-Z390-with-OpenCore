@@ -1,7 +1,7 @@
 # macOS 26 Tahoe on Z390 with OpenCore
 
 <p align="center">
-<img width="128" src="Tahoe icon.png">
+<img width="128" src="Img/Tahoe icon.png">
 </p>
 
 Apple has released the beta version of macOS 26 Tahoe. This will be the last version compatible with Intel processors. It's possible to install Tahoe on my computer, but there are some considerations for this macOS. The main ones relate to updating OpenCore and kexts, USB port mapping, sound (AppleHDA.kext) and the Fenvi T919 Wi-Fi (all Broadcom Wi-Fi that could be used on Sonoma and Sequoia with the OCLP root patch). Some of these issues have already been solved. Others are still pending. My machine specifications are: Z390 Aorus Elite + i9-9900K + RX 6600 XT.
@@ -122,7 +122,7 @@ All supported models have T2 chip, so by default Hacks don't receive notificatio
 
 <br>
 <p align="center">
-<img width="640" src="RestrictEvents-tahoe.png">
+<img width="640" src="Img/RestrictEvents-tahoe.png">
 </p>
 <br>
 
@@ -134,7 +134,7 @@ Apple has changed the name of the USB port properties in USBMap.kext files in ma
 
 <br>
 <p align="center">
-<img width="640" src="USB-pretahoe.png">
+<img width="640" src="Img/USB-pretahoe.png">
 </p>
 <br>
 
@@ -142,7 +142,7 @@ it has now changed to:
 
 <br>
 <p align="center">
-<img width="640" src="USB-tahoe.png">
+<img width="640" src="Img/USB-tahoe.png">
 </p>
 <br>
 
@@ -150,7 +150,7 @@ You can have all four properties simultaneously so that the same ports map works
 
 <br>
 <p align="center">
-<img width="640" src="USB-all.png">
+<img width="640" src="Img/USB-all.png">
 </p>
 <br>
 
@@ -162,7 +162,7 @@ Note: Comment property is not part of Apple ports maps but it is useful informat
 
 Although AppleHDA.kext was present in the first beta of macOS Tahoe, it has been removed by Apple from subsequent betas and does not appear to be reintroduced into the system. Without this extension it's impossible to manage audio from the motherboard chip and AppleALC.kext is useless, so the integrated audio source has been lost. Apple Silicon Macs manage audio via the T2 chip; they don't need AppleHDA.kext and Apple has decided not to maintain it.
 
-Direct options include:
+**Options without AppleHDA.kext**:
 
 - Audio via HDMI or DisplayPort from the AMD graphics card ports.
 - USB sound devices (automatically recognized by macOS; plug and play). I've tried the Sound Blaster Play! 3 device, which costs less than €20, and I'm very satisfied with the sound quality but it has two drawbacks:
@@ -170,7 +170,14 @@ Direct options include:
 	- Although its CPU usage is minimal, it's slightly higher than that of the integrated audio.
 - VoodooHDA.kext: Audio driver less commonly used than AppleALC.kext. Available on the CloverHackyColor GitHub site (current developer: *Sergey Slice*). *Chris1111* has a utility on his GitHub site that automates the VoodooHDA installation process on Tahoe (**VoodooHDA-Tahoe**). I haven't tried it but some users have solved audio issue with it.
 
-The most desired solution is reinstalling AppleHDA.kext. This can already be done thanks to recently emerged projects: [MyKextInstaller](https://github.com/Mirone/MyKextInstaller) by *Mirone* and [SimpleLoader](https://github.com/laobamac/SimpleLoader) by *laobamac*. Both projects are on GitHub. I've tested both and they worked well. More info at: [AppleHDA back in Tahoe](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe).
+**AppleHDA.kext back**:
+
+The most desired solution is reinstalling AppleHDA.kext. This can already be done thanks to recently emerged projects: MyKextInstaller by *Mirone* and SimpleLoader by *laobamac*. Both projects are on GitHub. I've tested both and they worked well. More info at: [AppleHDA back in Tahoe](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe).
+
+If you not have GitHub account, you can get these apps from my website:
+
+- MyKextInstaller
+- SimpleLoader
 
 ### Intel Wi-Fi
 
