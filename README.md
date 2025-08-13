@@ -203,7 +203,7 @@ It has two config.plist files:
 	- Requires WhateverGreen, which has an issue with Tahoe (at least up to the current beta 5): it fails during clean install so you have to use config-macpro.plist for the installation. Afterwards, you can keep config-imac.plist for daily use.
 	- Don't forget to rename config-imac.plist to config.plist.
 
-Both config.plists work for diferent macOS thanks to the MinKernel and MaxKernel properties of the kexts:
+Both config.plists work for different macOS thanks to the MinKernel and MaxKernel properties of the kexts:
 
 - macOS Ventura: Fenvi Wi-Fi that works as is, no kexts are added
 - macOS Sonoma and Sequoia: Fenvi Wi-Fi that requires the settings by OCLP (IOSkywalkFamily.kext, IO80211FamilyLegacy.kext, etc.). MinKernel = 23.0.0 and MaxKernel = 24.20.0
