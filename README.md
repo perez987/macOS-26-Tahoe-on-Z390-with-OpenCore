@@ -192,7 +192,7 @@ It has two config.plist files:
 	- IMPORTANT: Fill in your personal numbers in PlatformInfo >> Generic
 	- iGPU Disabled in BIOS
 	- Does not use WhateverGreen
-	- Don't forget to rename config-imac.plist to config.plist.
+	- Don't forget to rename config-macpro.plist to config.plist.
 
 - config-imac.plist
 	- SMBIOS iMac20,2
