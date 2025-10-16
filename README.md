@@ -4,7 +4,7 @@
 <img width="128" src="Img/Tahoe icon.png">
 </p>
 
-Apple has released the beta version of macOS 26 Tahoe. This will be the last version compatible with Intel processors. It's possible to install Tahoe on my computer, but there are some considerations for this macOS. The main ones relate to updating OpenCore and kexts, USB port mapping, sound (AppleHDA.kext) and the Fenvi T919 Wi-Fi (all Broadcom Wi-Fi that could be used on Sonoma and Sequoia with the OCLP root patch). Some of these issues have already been solved. Others are still pending. My machine specifications are: Z390 Aorus Elite + i9-9900K + RX 6600 XT.
+Apple has released macOS 26 Tahoe. This will be the last version compatible with Intel processors. It's possible to install Tahoe on my computer, but there are some considerations for this macOS. The main ones relate to updating OpenCore and kexts, USB port mapping, sound (AppleHDA.kext) and Fenvi T919 Wi-Fi (all Broadcom Wi-Fi that could be used on Sonoma and Sequoia with the OCLP root patch). Some of these issues have already been solved. Others are still pending. My machine specifications are: Z390 Aorus Elite + i9-9900K + RX 6600 XT.
 
 ### Supported Intel SMBIOS
 
@@ -200,7 +200,7 @@ It has two config.plist files:
 	- iGPU wireless (headless mode), AMD as the primary card
 	- iGPU Enabled in BIOS
 	- unfairgva=6 in the dGPU properties to have DRM (partial)
-	- Requires WhateverGreen, which has an issue with Tahoe (at least up to the current beta 5): it fails during clean install so you have to use config-macpro.plist for the installation. Afterwards, you can keep config-imac.plist for daily use.
+	- Requires WhateverGreen, which has an issue with Tahoe: it fails during clean install so you have to use config-macpro.plist for the installation. Afterwards, you can have config-imac.plist for daily use.
 	- Don't forget to rename config-imac.plist to config.plist.
 
 Both config.plists work for different macOS thanks to the MinKernel and MaxKernel properties of the kexts:
