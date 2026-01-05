@@ -212,5 +212,3 @@ Both config.plists work for different macOS thanks to the MinKernel and MaxKerne
 I use the Fenvi Bluetooth, which works as is on all four systems. AX210 card's Bluetooth is disconnected from the motherboard.
 
 So the same EFI works for me to boot from Ventura to Tahoe. Modify it according to your hardware.
-
-You can download the EFI with OpenCore 1.0.5 from [here](https://perez987.es/wp-content/uploads/2024/07/EFI-15-1.1.0.zip).
