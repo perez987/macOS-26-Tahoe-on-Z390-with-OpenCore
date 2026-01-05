@@ -1,7 +1,7 @@
 # macOS 26 Tahoe on Z390 with OpenCore
 
 <p align="center">
-<img width="128" src="Img/Tahoe icon.png">
+<img width="128" src="Images/Tahoe icon.png">
 </p>
 
 Apple has released macOS 26 Tahoe. This will be the last version compatible with Intel processors. It's possible to install Tahoe on my computer, but there are some considerations for this macOS. The main ones relate to updating OpenCore and kexts, USB port mapping, sound (AppleHDA.kext) and Fenvi T919 Wi-Fi (all Broadcom Wi-Fi that could be used on Sonoma and Sequoia with the OCLP root patch). Some of these issues have already been solved. Others are still pending. My machine specifications are: Z390 Aorus Elite + i9-9900K + RX 6600 XT.
@@ -122,7 +122,7 @@ All supported models have T2 chip, so by default Hacks don't receive notificatio
 
 <br>
 <p align="center">
-<img width="640" src="Img/RestrictEvents-tahoe.png">
+<img width="640" src="Images/RestrictEvents-tahoe.png">
 </p>
 <br>
 
@@ -134,7 +134,7 @@ Apple has changed the name of the USB port properties in USBMap.kext files in ma
 
 <br>
 <p align="center">
-<img width="640" src="Img/USB-pretahoe.png">
+<img width="640" src="Images/USB-pretahoe.png">
 </p>
 <br>
 
@@ -142,7 +142,7 @@ it has now changed to:
 
 <br>
 <p align="center">
-<img width="640" src="Img/USB-tahoe.png">
+<img width="640" src="Images/USB-tahoe.png">
 </p>
 <br>
 
@@ -150,7 +150,7 @@ You can have all four properties simultaneously so that the same ports map works
 
 <br>
 <p align="center">
-<img width="640" src="Img/USB-all.png">
+<img width="640" src="Images/USB-all.png">
 </p>
 <br>
 
